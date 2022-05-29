@@ -1,0 +1,52 @@
+@import url(https://fonts.googleapis.com/css?family=JetBrains+Mono:100,200,300,regular,500,600,700,800,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic);
+
+body {
+  font-family: JetBrains Mono, monospace;
+  background-color: rgb(19, 19, 19);
+  color: rgb(241, 241, 241);
+  overflow-y: hidden;
+}
+
+h1 {
+  font-size: 30vmin;
+  font-weight: 700;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+section p {
+  color: rgb(194, 194, 194);
+}
+
+nav {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+}
+
+nav a {
+  color: #999991;
+  transition: 0.8s;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #c5c5ba;
+  transition: 0.8s;
+}
+
+nav a.selected {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 20vmin;
+  }
+}
